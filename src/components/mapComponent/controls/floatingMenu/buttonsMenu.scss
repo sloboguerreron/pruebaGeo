@@ -1,0 +1,131 @@
+@import '../../../../scss/sizes.scss';
+@import '../../../../scss/colors.scss';
+
+@include tablet{
+    #floatingMenu{
+        z-index: 700;
+        bottom: 10%;
+        left: 50px; 
+        &.active{
+            width: 35%;
+        }
+    }
+
+    div.floating-action-menu > .action-menu {
+        visibility: hidden;
+        transform: translateY(65px);
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 300ms linear;
+    }
+    div.floating-action-menu.active > .action-menu {
+        visibility: visible;
+        transform: translate(5px);
+        opacity: 1;
+        padding-bottom: 5px;
+        max-height: 1000px;
+    }
+
+    div.floating-action-menu > .action-menu > .floating-action {
+        padding-right: 0.45rem;
+    }
+}
+
+@include desktop{
+    #floatingMenu{
+        z-index: 700;
+        bottom: 0.5%; 
+        left: 10%; 
+        &.active{
+            width: 75%
+        }
+    }
+    .btn-submenu{
+        margin-bottom: 22px;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background-color: $secundary_color;
+        }
+        &.active{
+            background-color:$secundary_color;
+        }
+    }
+    .badge{
+        position: absolute; 
+        bottom:0px;
+        left: 5px;
+        right: 2px;
+        // margin-bottom: -10px
+    }
+    div.floating-action-menu > .action-menu {
+        visibility: hidden;
+        transform: translateY(65px);
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 300ms linear;
+    }
+    div.floating-action-menu.active > .action-menu {
+        visibility: visible;
+        transform: translate(35px,40px);
+        opacity: 1;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        max-height: 1000px;
+    }
+
+    .center-col{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.btn-fab {
+    border-radius: 50%;
+    background-color: $primary_color;
+    border-color: $primary_color;
+    color: white;  
+    
+    &:hover{
+        color: white
+    }
+}
+
+
+
+div.floating-action-menu.active > .action-button > .btn-floating {
+    background-color: $success_color;
+    border-color: $success_color;
+}
+div.floating-action-menu.active > .action-button > .btn-floating:hover {
+    background-color: $success_color;
+    border-color: $success_color;
+}
+
+div.floating-action-menu > .action-menu .btn-floating,
+div.floating-action-menu > .action-menu .badge
+{
+    transform: scale(0.4);
+    transition: all 500ms ease-in-out;
+}
+div.floating-action-menu.active > .action-menu .btn-floating,
+div.floating-action-menu.active > .action-menu .badge
+{
+    transform: scale(1);
+}
+
+div.floating-action-menu > .action-button > .btn-floating {
+    transition: all 500ms linear;
+}
+
+
+div.floating-action-menu > .action-button > .btn-floating > i {
+    transition: transform 500ms ease-in-out;
+}
+div.floating-action-menu.active > .action-button > .btn-floating > i {
+    transform: rotate(-315deg);
+}

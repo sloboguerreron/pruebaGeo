@@ -1,0 +1,17 @@
+@import '../../../../scss/sizes.scss';
+
+.coord-form{
+    display:inline-block;
+    text-align:center;
+}
+.coord-form-label{
+    @include tablet{
+        text-align: left;
+    }
+    @include desktop{
+        text-align: right;
+    }
+}
+.form-coord-sys{
+    display: none;
+}

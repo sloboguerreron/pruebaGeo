@@ -1,0 +1,37 @@
+
+.gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+    font-size: 9px;
+    box-sizing: border-box;
+}
+
+div.gm-iv-address {
+    display: none;
+}
+
+button{
+    &.gm-control-active{
+        &.gm-fullscreen-control{
+    width: 20px;
+    height: 20px;
+    }} 
+}
+
+.gm-fullscreen-control{
+    width: 20px;
+    height: 20px;
+}
+
+// .gm-style-cc { display:none; }
+
+a[href^="http://maps.google.com/maps"]{height: 8px;}
+a[href^="https://maps.google.com/maps"]{height: 8px;}
+
+.gmnoprint.gm-style-cc{
+    display:none;
+}
+// .gmnoprint a, .gmnoprint span, .gm-style-cc {
+//     display:none;
+// }
+// .gmnoprint div {
+//     background:none !important;
+// }

@@ -1,0 +1,38 @@
+@import '../../../../scss/sizes.scss';
+@import '../../../../scss/colors.scss';
+
+
+#searchBox{
+    z-index: 700; 
+    @include desktop{
+        top: 2%; 
+        left: 12%;
+        width: 500px;
+    }
+    @include tablet{
+        top: 3%;
+        left: 15%;
+        
+       
+    }
+}
+
+#dropdown-menu-results{
+    z-index: 100;
+}
+// search
+.ml-n5 {
+    margin-left: 0px;
+}
+
+.mr-n5 {
+    margin-left: -40px;
+}
+
+.rounded-left {
+    border-radius: 50rem 0rem 0rem 50rem !important;
+}
+
+.rounded-right {
+    border-radius: 0rem 50rem 50rem 0rem !important;
+}

@@ -1,0 +1,14 @@
+@import '../../../../scss/colors';
+#filterModal{
+    padding-left: 46px;
+}
+.card-body{
+    text-align: center;
+}
+.btn-success{
+    background-color:$secundary_color;
+    border-color: $secundary_color;
+    color:white;
+}
+
+.btn.checked { background-color: $secundary_color; color: white; } 

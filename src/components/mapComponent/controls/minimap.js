@@ -11,4 +11,3 @@ export var minimap= new L.Control.MiniMap(standard_osm_mm,
     minimized:true,
     position: "bottomleft"
 })
-

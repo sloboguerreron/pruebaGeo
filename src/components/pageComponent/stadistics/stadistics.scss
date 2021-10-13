@@ -1,0 +1,62 @@
+@import '../../../scss/sizes.scss';
+// @import '../../../scss/colors.scss';
+
+#modalStadistics{
+    z-index: 2000;
+}
+
+@include tablet{
+    #datastudioChart{
+        height: 200px;
+        overflow-y: auto;
+    }    
+}
+// #chart-container {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     height: 100vh;
+//     padding: 10px;
+//     background-color: white;
+//     &.nonactive{
+//         display: none;
+//     }
+//     @include tablet{
+//         width: 100%;
+//         z-index: 1000;  
+//     }
+//     @include desktop {
+//         width: 100%;
+//         z-index: 10;
+//     }
+// }
+
+// #closeSideOptions{
+//     z-index: 1000;
+//     position: relative;
+//     float: left;
+//     padding: 0px 5px 0px 5px;
+// }
+
+
+// // dropdown
+
+// .menuItemsTooltip{
+//     text-align: center;
+//     justify-content: center;
+//     display: flex;
+// }
+
+
+// a.nav-link{
+//     color:$primary_color;
+// }
+// a.nav-link.active{
+//     color:$secundary_color;
+// }
+
+// // tab navbar
+
+// .tab-pane{
+//     margin-top: 20px;
+// }

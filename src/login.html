@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/icons/logos/icono-amb.JPG">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="scss/login.css"/>  
+    <title>Juan de Acosta Login</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="logo-juan-de-acosta">
+          <img src="./assets/icons/login/juan-de-acosta-logo.png"  alt="Logo-juan-de-acosta">
+        </div>
+        <div class="form">
+          <form class="login-form">
+            <p class="title">Iniciar Sesión</p>
+            <input type="email" placeholder="Correo" id="email"/>
+            <input type="password" placeholder="Contraseña" id="password"/>
+            <i class="far fa-eye-slash" id="see-password"></i>
+            <button type="button" id="botton">Acceder </button>
+            <p class="message"> <a href="recover_password.html">Recuperar contraseña</a></p>
+          </form>
+        </div>
+        <div class="eslogan-amb">
+          <img src="./assets/icons/login/amb-eslogan.JPG"  alt="Logo-juan-de-acosta">
+        </div>
+      </div>
+      <script src="login.js"></script>  
+</body>
+</html>

@@ -1,11 +1,12 @@
 const L =require ('leaflet');
 import 'leaflet-marker-rotation/src/rotatedMarker';
-import '@fortawesome/free-regular-svg-icons'
 
-export var dynamicMarker=(icono, coords,angle)=>{
+// dynamicMarker
+export var dynamicMarker=(icono, coords,angle,drag)=>{
     return L.rotatedMarker(coords, {
         icon: icono,
         rotationOrigin:'center',
-        rotationAngle: angle
+        rotationAngle: angle,
+        draggable: drag
     });
 }
